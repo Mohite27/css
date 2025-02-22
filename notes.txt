@@ -1,0 +1,5 @@
+Cascading Style Sheets (CSS) 3 Notes
+
+What is CSS ? 
+CSS stand for Cascading Style Sheets. It allows you to add styles, shadows, transition effects etc.
+
