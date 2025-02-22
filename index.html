@@ -5,17 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Playground</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+
     <style>
       /* Inline CSS */
-      h1 {
+      h6 {
         background-color: #100101dc;
       }
     </style>
     <script type="text/javascript" src="./script.js"></script>
   </head>
   <body>
-    <div class="body">
-      <h2>Main content</h2>
-    </div>
+    <header class="main-header">
+      <div>
+        <a href="index.html" class="main-header__brand">
+          CSS3
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="packages/index.html">Packages</a></li>
+          <li class="main-nav__item"><a href="customers/index.html">Customers</a></li>
+          <li class="main-nav__item main-nav__item--cta"><a href="start-hosting/index.html">Start Hosting</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="product-overview">
+        <h1>Cascading Style Sheets (CSS)</h1>
+      </section>
+      <section id="plans">
+        <h1 class="section-title">CSS is easy to learn</h1>
+        <p>But you need to understand it basic and all of its concepts like selectors, specificity then 
+          its really easy.</p>
+      </section>
+    </main>
   </body>
 </html>
