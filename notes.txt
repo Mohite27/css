@@ -3,3 +3,73 @@ Cascading Style Sheets (CSS) 3 Notes
 What is CSS ? 
 CSS stand for Cascading Style Sheets. It allows you to add styles, shadows, transition effects etc.
 
+
+Adding CSS in 3 ways.
+    1. In-line style  EX: <div style="background: #ff1b68">
+    2. Style tag   EX: <style> divClass { background: red } </style>
+    3. link tag by external .css file EX: <link href="style.css" type="text/css" rel="stylesheet"> </link> 
+
+Selectors
+    1. Element  Ex: h1, div etc
+    2. By classes Ex: .divClass { color: red}
+    3. Universal Ex: *
+    4. IDs  #divId {color: red}
+    5. Attribute Ex: [disabled] { color: red} 
+
+
+Cascading Style Sheets & Specificity
+
+    Cascading: Multiple Rules can apply to the same Element
+
+    Specificity: Resolve conflicts arising from multiple Rules
+
+        1. Inline Styles First priority but not recommended to use
+        2. #ID selector has higher priority
+        3. .class, :pseudo-class and [attribute] selector has same level 
+                 priority (applied last one from file)
+        4. <Tag> and ::pseudo-element selector has lowest priority
+        5. Combinator selector
+
+
+In Cascading Style Sheets (CSS), (1,0,1) is a specificity value that can be 
+    calculated when using a selector that contains a type and an ID. 
+
+How to calculate specificity
+    1. Add 1 to the column that corresponds to each type of selector used. 
+    2. Compare the values in each column to determine which selector is more specific. 
+    3. The declaration value in the style block with the matching selector and the greatest algorithmic weight is applied. 
+
+What are the different selector types? 
+    Type selector: Has the lowest specificity weight and a point value of 0-0-1
+    Class selector: Has a medium specificity weight and a point value of 0-1-0
+    ID selector: Has the highest specificity weight of 1-0-0
+
+Example: If a selector contains a type followed by an ID, the specificity value would be 1-0-1
+
+
+** Understanding Combinator **
+
+    1. Adjacent Sibling: 
+        a.) Elements share the same parent  
+        b.) Second element comes immediately after first element
+            div + p {
+
+            }
+    2. General Sibling
+        a.) Not required to be immediate after first element
+            div ~ p {
+
+            }
+    3. Child
+        a.) Any P tag direct child of div
+            div > p {
+
+            }
+    4. Descendant
+        a.) Second element is a descendent of the first element
+            div p {
+
+            }
+
+
+Selectors, Properties, Values
