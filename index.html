@@ -4,21 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Playground</title>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="./shared.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
-
-    <style>
-      /* Inline CSS */
-      h6 {
-        background-color: #100101dc;
-      }
-    </style>
     <script type="text/javascript" src="./script.js"></script>
   </head>
   <body>
@@ -47,52 +41,87 @@
       </section>
       <section id="plans">
         <h1 class="section-title">Choose your plan</h1>
-        <div>
-          <article>
-            <h1>FREE</h1>
-            <h2>$0/month</h2>
+        <div class="plan__list">
+          <article class="plan">
+            <h1 class="plan__title">FREE</h1>
+            <h2 class="plan__price">$0/month</h2>
             <h3>For hobby projects or small teams.</h3>
-            <ul>
-              <li>1 Workspace</li>
-              <li>Unlimited Traffic</li>
-              <li>10GB Storage</li>
-              <li>Basic Support</li>
+            <ul class="plan__features">
+              <li class="pan__feature">1 Workspace</li>
+              <li class="pan__feature">Unlimited Traffic</li>
+              <li class="pan__feature">10GB Storage</li>
+              <li class="pan__feature">Basic Support</li>
             </ul>
             <div>
-              <button>CHOOSE PLAN</button>
+              <button class="button">CHOOSE PLAN</button>
             </div>
           </article>
-          <article>
-            <h1>RECOMMENDED</h1>
-            <h1>PLUS</h1>
-            <h2>$29/month</h2>
+          <article class="plan plan--highlighted">
+            <h1 class="plan__annotation">RECOMMENDED</h1>
+            <h1 class="plan__title">PLUS</h1>
+            <h2 class="plan__price">$29/month</h2>
             <h3>For ambitions projects.</h3>
-            <ul>
-              <li>5 Workspace</li>
-              <li>Unlimited Traffic</li>
-              <li>100GB Storage</li>
-              <li>Plus Support</li>
+            <ul class="plan__features">
+              <li class="pan__feature">5 Workspace</li>
+              <li class="pan__feature">Unlimited Traffic</li>
+              <li class="pan__feature">100GB Storage</li>
+              <li class="pan__feature">Plus Support</li>
             </ul>
             <div>
-              <button>CHOOSE PLAN</button>
+              <button class="button">CHOOSE PLAN</button>
             </div>
           </article>
-          <article>
-            <h1>PREMIUM</h1>
-            <h2>$99/month</h2>
+          <article class="plan">
+            <h1 class="plan__title">PREMIUM</h1>
+            <h2 class="plan__price">$99/month</h2>
             <h3>Your enterprise solutions.</h3>
-            <ul>
-              <li>10 Workspace</li>
-              <li>Unlimited Traffic</li>
-              <li>Unlimited Storage</li>
-              <li>Priority Support</li>
+            <ul class="plan__features">
+              <li class="pan__feature">10 Workspace</li>
+              <li class="pan__feature">Unlimited Traffic</li>
+              <li class="pan__feature">Unlimited Storage</li>
+              <li class="pan__feature">Priority Support</li>
             </ul>
             <div>
-              <button>CHOOSE PLAN</button>
+              <button class="button">CHOOSE PLAN</button>
             </div>
           </article>
         </div>
       </section>
+      <section id="key-features">
+        <h1 class="section-title">Many Good Reasons to Stick Around</h1>
+        <ul class="key-feature__list">
+            <li class="key-feature">
+                <div class="key-feature__icon">
+
+                </div>
+                <p class="key-feature__description">3,857,000 Trusting Customers</p>
+            </li>
+            <li class="key-feature">
+                <div class="key-feature__icon">
+
+                </div>
+                <p class="key-feature__description">99.999% Uptime Guarantee</p>
+            </li>
+            <li class="key-feature">
+                <div class="key-feature__icon">
+
+                </div>
+                <p class="key-feature__description">Lightning Fast CDN</p>
+            </li>
+        </ul>
+    </section>
     </main>
+    <footer class="main-footer">
+      <nav>
+          <ul class="main-footer__links">
+              <li class="main-footer__link">
+                  <a href="#">Support</a>
+              </li>
+              <li class="main-footer__link">
+                  <a href="#">Terms of Use</a>
+              </li>
+          </ul>
+      </nav>
+  </footer>
   </body>
 </html>
